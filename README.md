@@ -24,8 +24,8 @@ A comprehensive web application for collecting and validating translations in NL
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/nlp-data-collection-app.git
-cd nlp-data-collection-app
+git clone https://github.com/alynhunzai/burushaski-data-collection-app.git
+cd burushaski-data-collection-app
 ```
 
 ### Backend Setup
@@ -38,7 +38,7 @@ cd nlp-data-collection-app
 
 2. Install dependencies:
    ```bash
-   pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic
+   pip install -r requirements.txt
    ```
 
 3. Set up PostgreSQL database:
