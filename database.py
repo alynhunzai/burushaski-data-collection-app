@@ -17,6 +17,10 @@ DATABASE_URL = os.getenv(
     "postgresql+psycopg2://username:password@localhost/nlp_app"
 )
 
+# Fix for Supabase/SQLAlchemy compatibility
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+
 # Create the SQLAlchemy engine
 engine = create_engine(
     DATABASE_URL,
