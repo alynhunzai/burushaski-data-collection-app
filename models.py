@@ -10,7 +10,7 @@ from sqlalchemy.dialects.postgresql import UUID
 from enum import Enum as PyEnum
 import uuid
 
-from .database import Base
+from database import Base
 
 
 class Dialect(PyEnum):
