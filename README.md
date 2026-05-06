@@ -52,7 +52,7 @@ cd burushaski-data-collection-app
 
 1. Install Streamlit:
    ```bash
-   pip install streamlit requests
+   pip install streamlit requests # skip this step as it is already in requirements.txt 
    ```
 
 ## 🚀 Usage
