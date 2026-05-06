@@ -1,0 +1,29 @@
+# Secrets and Environment Variables
+.env
+.env.local
+secrets.json
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache and Compiled Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Local Databases
+*.sqlite3
+*.db
+
+# OS Specific Files
+.DS_Store
+Thumbs.db
+
+# IDE Setup Files (VSCode, PyCharm)
+.vscode/
+.idea/
