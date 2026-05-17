@@ -21,7 +21,7 @@ st.set_page_config(
 )
 
 # Backend API configuration
-API_URL = os.getenv("API_URL", "https://burushaski-data-collection-app.onrender.com")
+API_URL = os.getenv("API_URL", "http://localhost:8000")
 DIALECTS = ["HUNZA", "NAGAR", "YASIN"]
 
 # Initialize session state
