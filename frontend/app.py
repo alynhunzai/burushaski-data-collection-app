@@ -56,7 +56,7 @@ def register_user(username: str, dialect: str) -> Optional[Dict[str, Any]]:
         response = requests.post(
             f"{API_URL}/users/",
             json={"username": username, "dialect": dialect},
-            timeout=10,
+            timeout=30,
         )
         response.raise_for_status()
         return response.json()
