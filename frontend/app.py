@@ -11,6 +11,7 @@ import requests
 from typing import Optional, Dict, Any
 import uuid
 import os
+import json
 
 # Configure Streamlit page
 st.set_page_config(
