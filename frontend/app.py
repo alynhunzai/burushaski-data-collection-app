@@ -22,7 +22,7 @@ st.set_page_config(
 
 # Backend API configuration
 API_URL = os.getenv("API_URL", "http://localhost:8000")
-DIALECTS = ["HUNZA", "NAGAR", "YASIN"]
+DIALECTS = ["Hunza", "Nagar", "Yasin"]
 
 # Initialize session state
 if "user_id" not in st.session_state:
