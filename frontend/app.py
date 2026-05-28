@@ -21,6 +21,10 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+st.info("""
+**Welcome to the Burushaski NLP Data Collection App!** We are on a mission to build the first modern machine translation model for Burushaski, an ancient language isolate spoken in Gilgit-Baltistan. Since AI requires data to learn, we are relying on native speakers like you to translate English benchmark sentences into a standardized Romanized Burushaski script. Contribute translations, vote on peer submissions, and help us preserve and digitize the Burushaski language for the future.
+""")
+
 # Backend API configuration
 API_URL = os.getenv("API_URL", "http://localhost:8000")
 DIALECTS = ["Hunza", "Nagar", "Yasin"]
