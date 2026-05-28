@@ -13,10 +13,6 @@ import uuid
 import os
 import json
 
-st.info("""
-**Welcome to the Burushaski NLP Data Collection App!** We are on a mission to build the first modern machine translation model for Burushaski, an ancient language isolate spoken in Gilgit-Baltistan. Since AI requires data to learn, we are relying on native speakers like you to translate English benchmark sentences into a standardized Romanized Burushaski script. Contribute translations, vote on peer submissions, and help us preserve and digitize the Burushaski language for the future.
-""")
-
 # Configure Streamlit page
 st.set_page_config(
     page_title="NLP Translation App",
@@ -24,6 +20,13 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+st.markdown("Welcome to the Burushaski Machine Translation Project. 
+This platform is designed to crowdsource a high-quality parallel corpus for Burushaski, 
+a low-resource language isolate. Because modern AI models require vast amounts of structured data to learn, 
+this app collects community-verified translations of benchmark English sentences into a standardized Latin-based Burushaski orthography. 
+Whether you are translating new sentences or validating existing submissions from other native speakers, 
+your contributions are crucial to overcoming the linguistic and technical barriers of developing the first robust text-to-text translation models for the Burushaski language.")
 
 # Backend API configuration
 API_URL = os.getenv("API_URL", "http://localhost:8000")
