@@ -71,7 +71,13 @@ def register_user(username: str, dialect: str) -> Optional[Dict[str, Any]]:
         if response.status_code == 409:
             st.error("❌ Username already exists. Try a different username.")
         else:
-            st.error(f"❌ Registration failed: {response.json().get('detail', 'Unknown error')}")
+            # Safely try to extract JSON error, fallback if Render sends HTML
+            try:
+                error_detail = response.json().get('detail', 'Unknown error')
+            except ValueError:
+                error_detail = f"Server Error (Status {response.status_code})"
+            
+            st.error(f"❌ Registration failed: {error_detail}")
         return None
     except Exception as e:
         st.error(f"❌ Unexpected error: {str(e)}")
