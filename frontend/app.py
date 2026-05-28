@@ -60,7 +60,7 @@ def register_user(username: str, dialect: str) -> Optional[Dict[str, Any]]:
                 "username": f"{username}", 
                 "dialect": f"{dialect}"
             },
-            timeout=30,
+            timeout=90,
         )
         response.raise_for_status()
         return response.json()
@@ -86,7 +86,7 @@ def fetch_random_sentence() -> Optional[Dict[str, Any]]:
         Sentence data dict if successful, None otherwise
     """
     try:
-        response = requests.get(f"{API_URL}/sentences/random", timeout=10)
+        response = requests.get(f"{API_URL}/sentences/random", timeout=90)
         response.raise_for_status()
         return response.json()
     except requests.exceptions.ConnectionError:
@@ -120,7 +120,7 @@ def submit_translation(source_id: str, user_id: str, translated_text: str) -> bo
                 "user_id": user_id,
                 "translated_text": translated_text,
             },
-            timeout=10,
+            timeout=90,
         )
         response.raise_for_status()
         return True
@@ -143,7 +143,7 @@ def fetch_unverified_translations() -> Optional[Dict[str, Any]]:
         List of translation data dicts if successful, None otherwise
     """
     try:
-        response = requests.get(f"{API_URL}/translations/unverified", timeout=10)
+        response = requests.get(f"{API_URL}/translations/unverified", timeout=90)
         response.raise_for_status()
         translations = response.json()
         return translations if translations else None
@@ -178,7 +178,7 @@ def submit_validation(translation_id: str, user_id: str, vote: int) -> bool:
                 "user_id": user_id,
                 "vote": vote,
             },
-            timeout=10,
+            timeout=90,
         )
         response.raise_for_status()
         return True
