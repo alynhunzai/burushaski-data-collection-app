@@ -1,5 +1,5 @@
 from typing import List
-
+from uuid import UUID
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, validator
@@ -16,7 +16,7 @@ class UserCreate(BaseModel):
 
 
 class UserRead(BaseModel):
-    id: str
+    id: UUID
     username: str
     dialect: Dialect
     trust_score: float
@@ -26,7 +26,7 @@ class UserRead(BaseModel):
 
 
 class SourceSentenceRead(BaseModel):
-    id: str
+    id: UUID
     text: str
     language: str
     is_active: bool
@@ -36,15 +36,15 @@ class SourceSentenceRead(BaseModel):
 
 
 class TranslationCreate(BaseModel):
-    source_id: str
-    user_id: str
+    source_id: UUID
+    user_id: UUID
     translated_text: str = Field(..., min_length=1)
 
 
 class TranslationRead(BaseModel):
-    id: str
-    source_id: str
-    user_id: str
+    id: UUID
+    source_id: UUID
+    user_id: UUID
     translated_text: str
     net_votes: int
     is_verified: bool
@@ -55,7 +55,7 @@ class TranslationRead(BaseModel):
 
 class ValidationCreate(BaseModel):
     translation_id: str
-    user_id: str
+    user_id: UUID
     vote: int
 
     @validator("vote")
@@ -66,9 +66,9 @@ class ValidationCreate(BaseModel):
 
 
 class ValidationRead(BaseModel):
-    id: str
-    translation_id: str
-    user_id: str
+    id: UUID
+    translation_id: UUID
+    user_id: UUID
     vote: int
 
     class Config:
