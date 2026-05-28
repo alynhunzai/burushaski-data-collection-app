@@ -21,13 +21,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-st.write("""Welcome to the Burushaski Machine Translation Project. 
-This platform is designed to crowdsource a high-quality parallel corpus for Burushaski, 
-a low-resource language isolate. Because modern AI models require vast amounts of structured data to learn, 
-this app collects community-verified translations of benchmark English sentences into a standardized Latin-based Burushaski orthography. 
-Whether you are translating new sentences or validating existing submissions from other native speakers, 
-your contributions are crucial to overcoming the linguistic and technical barriers of developing the first robust text-to-text translation models for the Burushaski language.""")
-
 # Backend API configuration
 API_URL = os.getenv("API_URL", "http://localhost:8000")
 DIALECTS = ["Hunza", "Nagar", "Yasin"]
@@ -250,6 +243,14 @@ else:
 
 # Main page
 st.title("🌐 NLP Translation Contributor")
+
+# Welcome message
+st.markdown("""Welcome to the Burushaski Machine Translation Project. 
+This platform is designed to crowdsource a high-quality parallel corpus for Burushaski, 
+a low-resource language isolate. Because modern AI models require vast amounts of structured data to learn, 
+this app collects community-verified translations of benchmark English sentences into a standardized Latin-based Burushaski orthography. 
+Whether you are translating new sentences or validating existing submissions from other native speakers, 
+your contributions are crucial to overcoming the linguistic and technical barriers of developing the first robust text-to-text translation models for the Burushaski language.""")
 
 if st.session_state.user_id is None:
     st.info("👈 Please register in the sidebar to get started.")
