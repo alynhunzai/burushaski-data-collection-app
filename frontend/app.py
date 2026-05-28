@@ -15,7 +15,7 @@ import json
 
 # Configure Streamlit page
 st.set_page_config(
-    page_title="NLP Translation App",
+    page_title="Burushaski Language Data Collection",
     page_icon="🌐",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -242,10 +242,10 @@ else:
         st.rerun()
 
 # Main page
-st.title("🌐 NLP Translation Contributor")
+st.title("🌐 Burushaski Corpus Crowdsourcing Platform")
 
 # Welcome message
-st.markdown("""Welcome to the Burushaski Machine Translation Project. 
+st.markdown("""Welcome to the Burushaski Corpus Crowdsourcing! 
 This platform is designed to crowdsource a high-quality parallel corpus for Burushaski, 
 a low-resource language isolate. Because modern AI models require vast amounts of structured data to learn, 
 this app collects community-verified translations of benchmark English sentences into a standardized Latin-based Burushaski orthography. 
