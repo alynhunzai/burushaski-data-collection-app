@@ -21,7 +21,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-st.markdown("""Welcome to the Burushaski Machine Translation Project. 
+st.write("""Welcome to the Burushaski Machine Translation Project. 
 This platform is designed to crowdsource a high-quality parallel corpus for Burushaski, 
 a low-resource language isolate. Because modern AI models require vast amounts of structured data to learn, 
 this app collects community-verified translations of benchmark English sentences into a standardized Latin-based Burushaski orthography. 
