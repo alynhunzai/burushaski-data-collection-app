@@ -54,7 +54,7 @@ class TranslationRead(BaseModel):
 
 
 class ValidationCreate(BaseModel):
-    translation_id: str
+    translation_id: UUID
     user_id: UUID
     vote: int
 
