@@ -9,7 +9,7 @@ backend running on localhost:8000.
 import streamlit as st
 import requests
 from typing import Optional, Dict, Any
-import uuid
+from uuid import UUID
 import os
 import json
 
@@ -106,7 +106,7 @@ def fetch_random_sentence() -> Optional[Dict[str, Any]]:
         return None
 
 
-def submit_translation(source_id: str, user_id: str, translated_text: str) -> bool:
+def submit_translation(source_id: UUID, user_id: UUID, translated_text: str) -> bool:
     """
     Submit a translation to the backend.
 
@@ -164,7 +164,7 @@ def fetch_unverified_translations() -> Optional[Dict[str, Any]]:
         return None
 
 
-def submit_validation(translation_id: str, user_id: str, vote: int) -> bool:
+def submit_validation(translation_id: UUID, user_id: UUID, vote: int) -> bool:
     """
     Submit a validation (vote) for a translation.
 
@@ -354,7 +354,7 @@ else:
             st.subheader("📝 Original Sentence (English)")
             
             # Fetch the source sentence details (we need to make an endpoint or store it)
-            st.info(f"Source ID: {trans_data[source_id]}")
+            st.info(f"Source ID: {trans_data['source_id']}")
             
             # Display the submitted translation
             st.subheader("✍️ Submitted Translation")
