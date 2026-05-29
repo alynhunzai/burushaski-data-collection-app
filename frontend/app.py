@@ -360,14 +360,14 @@ else:
             trans_data = st.session_state.current_unverified_translation
             
             # Fetch the original English sentence using the source_id
-            source_data = fetch_sentence(translation["source_id"])
+            source_data = fetch_sentence(trans_data["source_id"])
             
             if source_data:
                 st.markdown("### 🇬🇧 Original English Sentence")
                 st.info(source_data["text"])
                 
                 st.markdown("### 🏔️ Submitted Burushaski Translation")
-                st.success(translation["translated_text"])
+                st.success(trans_data["translated_text"])
             
             # Display the submitted translation
             # st.subheader("✍️ Submitted Translation")
