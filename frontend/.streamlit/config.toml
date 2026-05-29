@@ -1,33 +1,85 @@
+# [theme]
+# # Primary accent color for interactive elements (buttons, active tabs, etc.)
+# # A vibrant "Mountain Lake Blue" to inspire trust and match the regional vibe.
+# primaryColor = "#0072B5"
+
+# # Background color for the main content area
+# # A crisp, clean white for maximum readability of the Burushaski and English text.
+# backgroundColor = "#FFFFFF"
+
+# # Background color used for the sidebar and most interactive widgets (input boxes)
+# # A soft, icy gray to create a subtle contrast with the main background.
+# secondaryBackgroundColor = "#F0F4F8"
+
+# # Color used for almost all text
+# # A very dark slate (softer on the eyes and more modern than pure black).
+# textColor = "#1E293B"
+
+# # Font family for all text in the app. 
+# # "sans serif" is best for modern web apps and cross-platform readability.
+# # Accepted values: "sans serif", "serif", "monospace"
+# font = "sans serif"
+
+# [theme.dark]
+# primaryColor = "#3B82F6"
+# backgroundColor = "#0F172A"
+# secondaryBackgroundColor = "#1E293B"
+# textColor = "#F8FAFC"
+# font = "sans serif"
+
+# # [theme.sidebar]
+# # backgroundColor="aliceBlue"
+# # secondaryBackgroundColor="skyBlue"
+# # baseRadius="full"
+[[theme.fontFaces]]
+family = "SpaceGrotesk"
+url = "app/static/SpaceGrotesk-VariableFont_wght.ttf"
+
+[[theme.fontFaces]]
+family = "SpaceMono"
+url = "app/static/SpaceMono-Bold.ttf"
+style = "normal"
+weight = 700
+
+[[theme.fontFaces]]
+family = "SpaceMono"
+url = "app/static/SpaceMono-BoldItalic.ttf"
+style = "italic"
+weight = 700
+
+[[theme.fontFaces]]
+family = "SpaceMono"
+url = "app/static/SpaceMono-Italic.ttf"
+style = "italic"
+weight = 400
+
+[[theme.fontFaces]]
+family = "SpaceMono"
+url = "app/static/SpaceMono-Regular.ttf"
+style = "normal"
+weight = 400
+
 [theme]
-# Primary accent color for interactive elements (buttons, active tabs, etc.)
-# A vibrant "Mountain Lake Blue" to inspire trust and match the regional vibe.
-primaryColor = "#0072B5"
+primaryColor = "#cb785c"
+backgroundColor = "#fdfdf8"
+secondaryBackgroundColor = "#ecebe3"
+textColor = "#3d3a2a"
+linkColor = "#3d3a2a"
+borderColor = "#d3d2ca"
+showWidgetBorder = true
+baseRadius = "0.75rem"
+buttonRadius = "full"
+font = "SpaceGrotesk"
+headingFontWeights = [600,500,500,500,500,500]
+headingFontSizes = ["3rem", "2rem"]
+codeFont = "SpaceMono"
+codeFontSize = ".75rem"
+codeBackgroundColor = "#ecebe4"
+showSidebarBorder = true
+chartCategoricalColors = ["#0ea5e9", "#059669", "#fbbf24"]
 
-# Background color for the main content area
-# A crisp, clean white for maximum readability of the Burushaski and English text.
-backgroundColor = "#FFFFFF"
-
-# Background color used for the sidebar and most interactive widgets (input boxes)
-# A soft, icy gray to create a subtle contrast with the main background.
-secondaryBackgroundColor = "#F0F4F8"
-
-# Color used for almost all text
-# A very dark slate (softer on the eyes and more modern than pure black).
-textColor = "#1E293B"
-
-# Font family for all text in the app. 
-# "sans serif" is best for modern web apps and cross-platform readability.
-# Accepted values: "sans serif", "serif", "monospace"
-font = "sans serif"
-
-[theme.dark]
-primaryColor = "#3B82F6"
-backgroundColor = "#0F172A"
-secondaryBackgroundColor = "#1E293B"
-textColor = "#F8FAFC"
-font = "sans serif"
-
-# [theme.sidebar]
-# backgroundColor="aliceBlue"
-# secondaryBackgroundColor="skyBlue"
-# baseRadius="full"
+[theme.sidebar]
+backgroundColor = "#f0f0ec"
+secondaryBackgroundColor = "#ecebe3"
+headingFontSizes = ["1.6rem", "1.4rem", "1.2rem"]
+dataframeHeaderBackgroundColor = "#e4e4e0"
