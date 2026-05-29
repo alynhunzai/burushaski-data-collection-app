@@ -353,7 +353,7 @@ else:
             # Display the original sentence
             st.subheader("📝 Original Sentence (English)")
             st.info(sentence_data["text"])
-            st.info(f"Source ID: {trans_data[['source_id']["source_sentence"]]}")
+            st.info(f"Source ID: {trans_data['source_sentence']}")
             # Fetch the source sentence details (we need to make an endpoint or store it)
             st.info(f"Source ID: {trans_data['source_id']}")
             
