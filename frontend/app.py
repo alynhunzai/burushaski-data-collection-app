@@ -354,7 +354,7 @@ else:
             st.subheader("📝 Original Sentence (English)")
             
             # Fetch the source sentence details (we need to make an endpoint or store it)
-            st.info(f"Source ID: {trans_data['source_id']}")
+            st.info(f"Source ID: {trans_data[source_id]}")
             
             # Display the submitted translation
             st.subheader("✍️ Submitted Translation")
