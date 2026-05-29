@@ -20,14 +20,14 @@ textColor = "#1E293B"
 # Accepted values: "sans serif", "serif", "monospace"
 font = "sans serif"
 
-[theme.dark]
-primaryColor = "#3B82F6"
-backgroundColor = "#0F172A"
-secondaryBackgroundColor = "#1E293B"
-textColor = "#F8FAFC"
-font = "sans serif"
+# [theme.dark]
+# primaryColor = "#3B82F6"
+# backgroundColor = "#0F172A"
+# secondaryBackgroundColor = "#1E293B"
+# textColor = "#F8FAFC"
+# font = "sans serif"
 
-[theme.sidebar]
-backgroundColor="aliceBlue"
-secondaryBackgroundColor="skyBlue"
-baseRadius="full"
+# [theme.sidebar]
+# backgroundColor="aliceBlue"
+# secondaryBackgroundColor="skyBlue"
+# baseRadius="full"
