@@ -363,15 +363,11 @@ else:
             source_data = fetch_sentence(trans_data["source_id"])
             
             if source_data:
-                st.markdown("### 🇬🇧 Original English Sentence")
+                st.markdown("### Original English Sentence")
                 st.info(source_data["text"])
                 
-                st.markdown("### 🏔️ Submitted Burushaski Translation")
+                st.markdown("### ✍️ Submitted Burushaski Translation")
                 st.success(trans_data["translated_text"])
-            
-            # Display the submitted translation
-            # st.subheader("✍️ Submitted Translation")
-            # st.info(trans_data["translated_text"])
             
             # Display vote count
             col1, col2, col3 = st.columns([1, 2, 1])
