@@ -1,0 +1,28 @@
+[theme]
+# Primary accent color for interactive elements (buttons, active tabs, etc.)
+# A vibrant "Mountain Lake Blue" to inspire trust and match the regional vibe.
+primaryColor = "#0072B5"
+
+# Background color for the main content area
+# A crisp, clean white for maximum readability of the Burushaski and English text.
+backgroundColor = "#FFFFFF"
+
+# Background color used for the sidebar and most interactive widgets (input boxes)
+# A soft, icy gray to create a subtle contrast with the main background.
+secondaryBackgroundColor = "#F0F4F8"
+
+# Color used for almost all text
+# A very dark slate (softer on the eyes and more modern than pure black).
+textColor = "#1E293B"
+
+# Font family for all text in the app. 
+# "sans serif" is best for modern web apps and cross-platform readability.
+# Accepted values: "sans serif", "serif", "monospace"
+font = "sans serif"
+
+[theme.dark]
+primaryColor = "#3B82F6"
+backgroundColor = "#0F172A"
+secondaryBackgroundColor = "#1E293B"
+textColor = "#F8FAFC"
+font = "sans serif"
