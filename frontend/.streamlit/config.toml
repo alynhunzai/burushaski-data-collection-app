@@ -30,4 +30,4 @@ font = "sans serif"
 [theme.sidebar]
 backgroundColor="aliceBlue"
 secondaryBackgroundColor="skyBlue"
-baseRadius="none"
+baseRadius="full"
