@@ -208,3 +208,13 @@ def create_validation(validation_in: ValidationCreate, db: Session = Depends(get
     db.commit()
     db.refresh(validation)
     return validation
+
+@app.get("/sentences/{sentence_id}", response_model=SourceSentenceRead)
+def get_sentence_by_id(sentence_id: UUID, db: Session = Depends(get_db)):
+    sentence = db.query(SourceSentence).filter(SourceSentence.id == sentence_id).first()
+    if not sentence:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Sentence not found."
+        )
+    return sentence
