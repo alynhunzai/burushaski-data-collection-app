@@ -198,6 +198,15 @@ def submit_validation(translation_id: UUID, user_id: UUID, vote: int) -> bool:
         st.error(f"❌ Error submitting vote: {str(e)}")
         return False
 
+def fetch_sentence(sentence_id: str) -> Optional[Dict[str, Any]]:
+    """Fetches a specific source sentence by its ID."""
+    try:
+        response = requests.get(f"{API_URL}/sentences/{sentence_id}", timeout=60)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        st.error(f"❌ Failed to fetch original sentence: {e}")
+        return None
 
 # Sidebar: User Registration/Login
 st.sidebar.title("👤 User Account")
@@ -350,16 +359,19 @@ else:
         if st.session_state.current_unverified_translation:
             trans_data = st.session_state.current_unverified_translation
             
-            # Display the original sentence
-            st.subheader("📝 Original Sentence (English)")
-            st.info(sentence_data["text"])
-            st.info(f"Source ID: {trans_data['source_sentence']}")
-            # Fetch the source sentence details (we need to make an endpoint or store it)
-            st.info(f"Source ID: {trans_data['source_id']}")
+            # Fetch the original English sentence using the source_id
+            source_data = fetch_sentence(translation["source_id"])
+            
+            if source_data:
+                st.markdown("### 🇬🇧 Original English Sentence")
+                st.info(source_data["text"])
+                
+                st.markdown("### 🏔️ Submitted Burushaski Translation")
+                st.success(translation["translated_text"])
             
             # Display the submitted translation
-            st.subheader("✍️ Submitted Translation")
-            st.info(trans_data["translated_text"])
+            # st.subheader("✍️ Submitted Translation")
+            # st.info(trans_data["translated_text"])
             
             # Display vote count
             col1, col2, col3 = st.columns([1, 2, 1])
