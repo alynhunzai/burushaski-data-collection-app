@@ -21,6 +21,31 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+st.markdown("""
+    <style>
+    /* Import Space Grotesk and Space Mono from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    /* Apply Space Grotesk to all general text */
+    html, body, [class*="css"] {
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    /* Apply Space Mono and background color to all code blocks */
+    code, pre {
+        font-family: 'Space Mono', monospace !important;
+        background-color: #ecebe4 !important;
+        font-size: 0.75rem !important;
+    }
+    
+    /* Apply full border radius to buttons */
+    .stButton > button {
+        border-radius: 9999px !important;
+        font-weight: 500 !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Backend API configuration
 API_URL = os.getenv("API_URL", "http://localhost:8000")
 DIALECTS = ["Hunza", "Nagar", "Yasin"]
