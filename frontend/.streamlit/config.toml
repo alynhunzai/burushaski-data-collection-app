@@ -1,36 +1,7 @@
 [server]
 enableStaticServing = true
 
-# --- Keep the same font definitions ---
-[[theme.fontFaces]]
-family = "SpaceGrotesk"
-url = "app/static/SpaceGrotesk-VariableFont_wght.ttf"
-
-[[theme.fontFaces]]
-family = "SpaceMono"
-url = "app/static/SpaceMono-Bold.ttf"
-style = "normal"
-weight = 700
-
-[[theme.fontFaces]]
-family = "SpaceMono"
-url = "app/static/SpaceMono-BoldItalic.ttf"
-style = "italic"
-weight = 700
-
-[[theme.fontFaces]]
-family = "SpaceMono"
-url = "app/static/SpaceMono-Italic.ttf"
-style = "italic"
-weight = 400
-
-[[theme.fontFaces]]
-family = "SpaceMono"
-url = "app/static/SpaceMono-Regular.ttf"
-style = "normal"
-weight = 400
-
-[theme]
+[theme.dark]
 base = "dark"
 primaryColor = "#cb785c"
 backgroundColor = "#1e1c18"             # Deep warm charcoal
@@ -39,19 +10,11 @@ textColor = "#fdfdf8"                   # Off-white for high contrast text
 linkColor = "#e29c85"                   # Lighter terracotta for visibility on dark
 borderColor = "#4a473b"                 # Dark muted border
 showWidgetBorder = true
-baseRadius = "0.75rem"
-buttonRadius = "full"
-font = "SpaceGrotesk"
-headingFontWeights =
-headingFontSizes = ["3rem", "2rem"]
-codeFont = "SpaceMono"
-codeFontSize = ".75rem"
-codeBackgroundColor = "#282620"
-showSidebarBorder = true
-chartCategoricalColors = ["#38bdf8", "#34d399", "#fcd34d"] # Brightened chart colors for dark mode
 
-[theme.sidebar]
-backgroundColor = "#181613"             # Very dark for sidebar distinction
-secondaryBackgroundColor = "#282620"
-headingFontSizes = ["1.6rem", "1.4rem", "1.2rem"]
-dataframeHeaderBackgroundColor = "#2d2a23"
+[theme]
+base = "light"
+primaryColor = "#cb785c"
+backgroundColor = "#fdfdf8"
+secondaryBackgroundColor = "#ecebe3"
+textColor = "#3d3a2a"
+font = "sans serif"
