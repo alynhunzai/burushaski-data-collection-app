@@ -25,10 +25,10 @@ st.markdown("""
     <style>
     /* Import Space Grotesk and Space Mono from Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+    
     /* Apply Space Grotesk to all general text */
     html, body, [class*="css"] {
-        font-family: 'Space Grotesk', sans-serif;
+        font-family: 'Space Grotesk';
     }
     
     /* Apply Space Mono and background color to all code blocks */
