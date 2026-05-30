@@ -75,12 +75,6 @@ codeBackgroundColor = "#ecebe4"
 showSidebarBorder = true
 chartCategoricalColors = ["#0ea5e9", "#059669", "#fbbf24"]
 
-[theme.dark]
-primaryColor = "#3B82F6"
-backgroundColor = "#0F172A"
-secondaryBackgroundColor = "#1E293B"
-textColor = "#F8FAFC"
-
 [theme.sidebar]
 backgroundColor = "#f0f0ec"
 secondaryBackgroundColor = "#ecebe3"
