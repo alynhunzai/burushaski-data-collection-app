@@ -10,11 +10,3 @@ textColor = "#fdfdf8"                   # Off-white for high contrast text
 linkColor = "#e29c85"                   # Lighter terracotta for visibility on dark
 borderColor = "#4a473b"                 # Dark muted border
 showWidgetBorder = true
-
-[theme]
-base = "light"
-primaryColor = "#cb785c"
-backgroundColor = "#fdfdf8"
-secondaryBackgroundColor = "#ecebe3"
-textColor = "#3d3a2a"
-font = "sans serif"
