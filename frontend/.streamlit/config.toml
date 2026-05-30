@@ -1,33 +1,7 @@
-# [theme]
-# # Primary accent color for interactive elements (buttons, active tabs, etc.)
-# # A vibrant "Mountain Lake Blue" to inspire trust and match the regional vibe.
-# primaryColor = "#0072B5"
-
-# # Background color for the main content area
-# # A crisp, clean white for maximum readability of the Burushaski and English text.
-# backgroundColor = "#FFFFFF"
-
-# # Background color used for the sidebar and most interactive widgets (input boxes)
-# # A soft, icy gray to create a subtle contrast with the main background.
-# secondaryBackgroundColor = "#F0F4F8"
-
-# # Color used for almost all text
-# # A very dark slate (softer on the eyes and more modern than pure black).
-# textColor = "#1E293B"
-
-# # Font family for all text in the app. 
-# # "sans serif" is best for modern web apps and cross-platform readability.
-# # Accepted values: "sans serif", "serif", "monospace"
-# font = "sans serif"
-
-# # [theme.sidebar]
-# # backgroundColor="aliceBlue"
-# # secondaryBackgroundColor="skyBlue"
-# # baseRadius="full"
-
 [server]
 enableStaticServing = true
 
+# --- Keep the same font definitions ---
 [[theme.fontFaces]]
 family = "SpaceGrotesk"
 url = "app/static/SpaceGrotesk-VariableFont_wght.ttf"
@@ -57,26 +31,27 @@ style = "normal"
 weight = 400
 
 [theme]
+base = "dark"
 primaryColor = "#cb785c"
-backgroundColor = "#fdfdf8"
-secondaryBackgroundColor = "#ecebe3"
-textColor = "#3d3a2a"
-linkColor = "#3d3a2a"
-borderColor = "#d3d2ca"
+backgroundColor = "#1e1c18"             # Deep warm charcoal
+secondaryBackgroundColor = "#282620"    # Slightly lighter charcoal for input boxes
+textColor = "#fdfdf8"                   # Off-white for high contrast text
+linkColor = "#e29c85"                   # Lighter terracotta for visibility on dark
+borderColor = "#4a473b"                 # Dark muted border
 showWidgetBorder = true
 baseRadius = "0.75rem"
 buttonRadius = "full"
 font = "SpaceGrotesk"
-headingFontWeights = [600,500,500,500,500,500]
+headingFontWeights =
 headingFontSizes = ["3rem", "2rem"]
 codeFont = "SpaceMono"
 codeFontSize = ".75rem"
-codeBackgroundColor = "#ecebe4"
+codeBackgroundColor = "#282620"
 showSidebarBorder = true
-chartCategoricalColors = ["#0ea5e9", "#059669", "#fbbf24"]
+chartCategoricalColors = ["#38bdf8", "#34d399", "#fcd34d"] # Brightened chart colors for dark mode
 
 [theme.sidebar]
-backgroundColor = "#f0f0ec"
-secondaryBackgroundColor = "#ecebe3"
+backgroundColor = "#181613"             # Very dark for sidebar distinction
+secondaryBackgroundColor = "#282620"
 headingFontSizes = ["1.6rem", "1.4rem", "1.2rem"]
-dataframeHeaderBackgroundColor = "#e4e4e0"
+dataframeHeaderBackgroundColor = "#2d2a23"
