@@ -11,7 +11,7 @@
 ![numpy](https://img.shields.io/badge/numpy-v2.4.4-green?style=plastic&logo=numpy&logoColor=black&labelColor=white)
 ![python-dotenv](https://img.shields.io/badge/python--dotenv-v1.2.2-green?style=plastic&labelColor=white)
 ![datasets](https://img.shields.io/badge/datasets-v3.6.0-green?style=plastic&labelColor=white)
-![Status](https://img.shields.io/badge/status-ongoing-green)
+![status](https://img.shields.io/badge/status-ongoing-green?style=plastic&labelColor=white)
 
 A comprehensive web application for collecting and validating translations in NLP projects, built with FastAPI backend and Streamlit frontend. This app enables community-driven data collection for machine translation tasks, featuring user registration, translation submission, and peer validation.
 
@@ -116,6 +116,9 @@ Access the application at `http://localhost:8501`.
 #### Validations
 - `POST /validations/` - Submit a vote on a translation
   - Body: `{"translation_id": "uuid", "user_id": "uuid", "vote": 1|-1}`
+
+#### Sentences by Source ID
+- `GET /sentences/{sentence_id}` - Get sentences for reviewing translations submitted by other users
 
 ### Response Models
 
