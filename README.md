@@ -1,4 +1,4 @@
-# 🌐 NLP Data Collection App
+# 🌐 Native Burushaski Data Collection App
 
 ![license](https://img.shields.io/badge/license-MIT-green?style=plastic&labelColor=white)
 ![fastapi](https://img.shields.io/badge/fastapi-v0.136.1-green?style=plastic&logo=fastapi&labelColor=white)
