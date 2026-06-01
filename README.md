@@ -170,7 +170,7 @@ All endpoints return JSON responses with appropriate HTTP status codes and error
 - Test API endpoints with tools like Postman or curl
 - Ensure mobile responsiveness in Streamlit UI
 
-## 🧑‍💻 Contributors
+## Contributors
 
 - **Noor Ali** - ML/MLOps
 - Open to contributors (especially native speakers, linguists, and ML engineers)
@@ -185,7 +185,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Frontend powered by [Streamlit](https://streamlit.io/)
 - Database ORM using [SQLAlchemy](https://www.sqlalchemy.org/)
 - PostgreSQL database with [psycopg2-binary](https://pypi.org/project/psycopg2-binary)
-- Native Burushaski speakers and elders
+- Native Burushaski speakers
 
 ## 🌐 Connect
 
