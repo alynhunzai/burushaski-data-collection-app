@@ -170,11 +170,6 @@ All endpoints return JSON responses with appropriate HTTP status codes and error
 - Test API endpoints with tools like Postman or curl
 - Ensure mobile responsiveness in Streamlit UI
 
-## Contributors
-
-- **Noor Ali** - ML/MLOps
-- Open to contributors (especially native speakers, linguists, and ML engineers)
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
