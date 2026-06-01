@@ -1,5 +1,11 @@
 # 🌐 NLP Data Collection App
 
+![License](https://img.shields.io/badge/license-MIT-green)
+![fastapi](https://img.shields.io/badge/fastapi-blue?style=plastic&logo=fastapi&logoColor=black&link=https%3A%2F%2Ffastapi.tiangolo.com%2F)
+![SQLAlchemy](https://img.shields.io/badge/sqlalchemy-blue?style=plastic&logo=sqlalchemy&logoColor=black)
+![uvicorn](https://img.shields.io/badge/uvicorn-blue?style=plastic&logo=uvicorn&logoColor=black)
+![Status](https://img.shields.io/badge/status-ongoing-blue)
+
 A comprehensive web application for collecting and validating translations in NLP projects, built with FastAPI backend and Streamlit frontend. This app enables community-driven data collection for machine translation tasks, featuring user registration, translation submission, and peer validation.
 
 ## ✨ Features
