@@ -1,17 +1,17 @@
 # 🌐 NLP Data Collection App
 
-![License](https://img.shields.io/badge/license-MIT-green)
-![fastapi](https://img.shields.io/badge/fastapi-v0.136.1-blue?style=plastic&logo=fastapi&labelColor=white)
-![uvicorn](https://img.shields.io/badge/uvicorn-v0.46.0-blue?style=plastic&labelColor=white)
-![sqlalchemy](https://img.shields.io/badge/sqlalchemy-v2.0.49-blue?style=plastic&logo=sqlalchemy&logoColor=black&labelColor=white)
-![psycopg2-binary](https://img.shields.io/badge/psycopg2--binary-v2.9.12-blue?style=plastic&labelColor=white)
-![pydantic](https://img.shields.io/badge/pydantic-v2.13.3-blue?style=plastic&logo=pydantic&logoColor=black&labelColor=white)
-![streamlit](https://img.shields.io/badge/streamlit-v1.57.0-blue?style=plastic&logo=streamlit&logoColor=black&labelColor=white)
-![requests](https://img.shields.io/badge/requests-v2.33.1-blue?style=plastic&labelColor=white)
-![numpy](https://img.shields.io/badge/numpy-v2.4.4-blue?style=plastic&logo=numpy&logoColor=black&labelColor=white)
-![python-dotenv](https://img.shields.io/badge/python--dotenv-v1.2.2-blue?style=plastic&labelColor=white)
-![datasets](https://img.shields.io/badge/datasets-v3.6.0-blue?style=plastic&labelColor=white)
-![Status](https://img.shields.io/badge/status-ongoing-blue)
+![license](https://img.shields.io/badge/license-MIT-green?style=plastic&labelColor=white)
+![fastapi](https://img.shields.io/badge/fastapi-v0.136.1-green?style=plastic&logo=fastapi&labelColor=white)
+![uvicorn](https://img.shields.io/badge/uvicorn-v0.46.0-green?style=plastic&labelColor=white)
+![sqlalchemy](https://img.shields.io/badge/sqlalchemy-v2.0.49-green?style=plastic&logo=sqlalchemy&logoColor=black&labelColor=white)
+![psycopg2-binary](https://img.shields.io/badge/psycopg2--binary-v2.9.12-green?style=plastic&labelColor=white)
+![pydantic](https://img.shields.io/badge/pydantic-v2.13.3-green?style=plastic&logo=pydantic&logoColor=black&labelColor=white)
+![streamlit](https://img.shields.io/badge/streamlit-v1.57.0-green?style=plastic&logo=streamlit&logoColor=black&labelColor=white)
+![requests](https://img.shields.io/badge/requests-v2.33.1-green?style=plastic&labelColor=white)
+![numpy](https://img.shields.io/badge/numpy-v2.4.4-green?style=plastic&logo=numpy&logoColor=black&labelColor=white)
+![python-dotenv](https://img.shields.io/badge/python--dotenv-v1.2.2-green?style=plastic&labelColor=white)
+![datasets](https://img.shields.io/badge/datasets-v3.6.0-green?style=plastic&labelColor=white)
+![Status](https://img.shields.io/badge/status-ongoing-green)
 
 A comprehensive web application for collecting and validating translations in NLP projects, built with FastAPI backend and Streamlit frontend. This app enables community-driven data collection for machine translation tasks, featuring user registration, translation submission, and peer validation.
 
